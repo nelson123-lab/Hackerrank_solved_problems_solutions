@@ -1,0 +1,5 @@
+M = int(input())
+M_set = set(list(map(int, input().split())))
+N = int(input())
+N_set = set(list(map(int, input().split())))
+print(*sorted(M_set.union(N_set)-M_set.intersection(N_set)), sep ="\n")
